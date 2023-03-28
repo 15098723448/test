@@ -25,6 +25,7 @@ export default {
 <style lang="less" scoped>
 .nav-bar {
   height: 44px;
+
   /deep/ .van-nav-bar__content {
     height: 44px;
 

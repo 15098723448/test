@@ -6,6 +6,7 @@ import deletePerson from '@/views/deletePerson/deletePerson.vue'
 import delPerMes from '@/views/delPerMes/delPerMes.vue'
 import changePerson from '@/views/changePerson/changePerson.vue'
 import applicationRecords from '@/views/applicationRecords/applicationRecords.vue'
+import addPerson from '@/views/addPerson/addPerson.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -33,6 +34,16 @@ const routes = [
       title: '减人'
     }
   },
+  // 陈凯元加的start
+  {
+    path: '/addPerson',
+    name: 'addPerson',
+    component: addPerson,
+    meta: {
+      title: '加人'
+    }
+  },
+  // end
   {
     path: '/delPerMes',
     name: 'DelPerMes',

@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="content-operation">
-                <div class="operation1">
+                <div class="operation1" @click="addPerson">
                     <img src="@/assets/jiaren.png" alt="">
                     <div>加人</div>
                 </div>
@@ -123,7 +123,10 @@ export default {
         },
         changePer(){
             this.$router.push('/changePerson')
-        }
+        },
+        addPerson() { 
+           this.$router.push('/addPerson') 
+        },
     }
 }
 </script>
