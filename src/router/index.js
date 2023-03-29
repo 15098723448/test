@@ -7,6 +7,8 @@ import delPerMes from '@/views/delPerMes/delPerMes.vue'
 import changePerson from '@/views/changePerson/changePerson.vue'
 import applicationRecords from '@/views/applicationRecords/applicationRecords.vue'
 import addPerson from '@/views/addPerson/addPerson.vue'
+import checkResule from '@/views/changePerson/components/checkResule.vue'
+import responsibleEdit from '@/views/responsibleEdit/responsibleEdit.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -68,6 +70,23 @@ const routes = [
       title: '申请记录'
     }
   },
+  {
+    path: '/checkResule',
+    name: 'CheckResule',
+    component: checkResule,
+    meta: {
+      title: '校验结果'
+    }
+  },
+  {
+    path: '/responsibleEdit',
+    name: 'responsibleEdit',
+    component: responsibleEdit,
+    meta: {
+      title: '经办人变更'
+    }
+  },
+  
   // {
   //   path: '/about',
   //   name: 'about',

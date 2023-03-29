@@ -37,11 +37,11 @@
                     <img src="@/assets/huanren.png" alt="">
                     <div>换人</div>
                 </div>
-                <div class="operation1">
+                <div class="operation1" @click="changeResponsible">
                     <img src="@/assets/jingbanren.png" alt="">
                     <div>经办人</div>
                 </div>
-                <div class="operation1">
+                <div class="operation1" >
                     <img src="@/assets/jingbanren.png" alt="">
                     <div>经办人</div>
                 </div>
@@ -126,6 +126,9 @@ export default {
         },
         addPerson() { 
            this.$router.push('/addPerson') 
+        },
+        changeResponsible(){
+            this.$router.push('/responsibleEdit') 
         },
     }
 }
